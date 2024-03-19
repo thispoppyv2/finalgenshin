@@ -186,7 +186,6 @@ body {
 
 .splashart {
     grid-area: 1 / 2 / 2 / 2;
-    z-index: -1;
 
 }
 
@@ -200,7 +199,7 @@ body {
     max-height: 100vh;
     width: 100vh;
     display: block;
-    z-index: 1;
+
 
     right: -100px;
 
@@ -284,6 +283,11 @@ body {
     transform: translateX(-200%);
     animation: fadeIn ease-out;
     animation-timeline: scroll(root);
+}
+
+.scrolling img
+{
+    width: 250px;
 }
 
 @keyframes fadeIn {
@@ -445,7 +449,7 @@ body {
     margin-bottom: 60px;
     text-decoration: none;
     color: var(--text);
-    font-size: 1.5em;
+    font-size: 1.2em;
     position: sticky;
     top: 100px;
     background: var(--background);
