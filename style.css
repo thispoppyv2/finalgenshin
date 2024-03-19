@@ -1,4 +1,4 @@
-/*@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     :root {
         --text: #10170d;
         --background: #e6e6e6;
@@ -6,8 +6,9 @@
         --secondary: #a8ccb5;
         --accent: #5af207;
         --font-family: "Kumbh Sans", sans-serif;
+        --grey: #dcdcdc;
     }
-}*/
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -17,6 +18,7 @@
         --secondary: #335740;
         --accent: #5ff80d;
         --font-family: "Kumbh Sans", sans-serif;
+        --grey: #3f3f3f;
     }
 }
 
@@ -669,7 +671,7 @@ body {
 
 .skillcon1
 {
-    background: #2E2E2E;
+    background: var(--grey);
     min-width: 300px;
     min-height: 100px;
     border-radius: 10px;
