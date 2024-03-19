@@ -167,6 +167,7 @@ body {
     text-align: center;
     width: 50vh;
     overflow: hidden;
+    transition: 0.3s;
 
 }
 
@@ -180,20 +181,39 @@ body {
     grid-area: 1 / 1 / 2 / 2;
     place-self: self-end;
     text-align: left;
+    text-indent: 15px;
+    height: 25px;
+
     background-color: var(--background);
     width: 100%;
-    -webkit-box-shadow: 0px 0px 44px 50px var(--background);
-    -moz-box-shadow: 0px 0px 44px 50px var(--background);
-    box-shadow: 0px 0px 44px 50px var(--background);
+    -webkit-box-shadow: 0px 0px 50px 50px var(--background);
+    -moz-box-shadow: 0px 0px 50px 50px var(--background);
+    box-shadow: 0px 0px 50px 50px var(--background);
     opacity: 0;
+    padding-bottom: 30px;
+    padding-left: 10px;
+
+    border-radius: 10px;
     transition: 0.3s;
+}
+
+.spotlight:hover
+{
+    -webkit-box-shadow:0px 0px 500px 10px var(--accent);
+    -moz-box-shadow: 0px 0px 500px 10px var(--accent);
+    box-shadow: 0px 0px 500px 10px var(--accent);
+    border-radius: 10px;
+    transition: 1s;
 }
 
 .spotlight:hover .hoverspot
 {
     opacity: 1;
+    border-radius: 10px;
     transition: 0.3s;
 }
+
+
 
 .verspot {
     grid-area: 1 / 1 / 2 / 2;
