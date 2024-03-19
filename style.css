@@ -175,6 +175,8 @@ body {
     width: 50vh;
     overflow: hidden;
     transition: 0.3s;
+    text-decoration: none;
+    color: var(--text);
 
 }
 
@@ -435,6 +437,24 @@ body {
     color: var(--background);
 }
 
+.changelogbtnsmall2 {
+    text-decoration: none;
+    font-size: 0.4em;
+!important;
+    background-color: var(--grey);
+    padding: 5px;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    font-weight: normal;
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    color: var(--text);
+}
+
+
 
 .gallerycon {
     margin-left: 60px;
@@ -479,10 +499,11 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    max-width: 300px;
+    row-gap: 10px;
+    min-width: 200px;
     height: 300px;
     padding-left: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     text-decoration: none;
     color: var(--text);
     font-size: 1.2em;
