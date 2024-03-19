@@ -50,11 +50,11 @@ body {
     display: flex;
     flex-flow: row;
     text-align: center;
-
     justify-content: space-between;
     position: static;
     background: var(--background);
     box-shadow: var(--background);
+    overflow: hidden;
     padding: 25px;
     margin-bottom: 0px;
     background: var(--background);
@@ -63,6 +63,37 @@ body {
     box-shadow: 0px 0px 115px 6px var(--background);
 
 
+}
+
+.navlinks .icon
+{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .navlinks a:not(:last-child) {display: none;}
+    .navlinks a.icon {
+        float: right;
+        display: block;
+    }
+
+    .hero
+    {
+        background-position: center;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navlinks.responsive {position: absolute;}
+    .navlinks.responsive .icon {
+        position: static;
+        right: 0;
+        top: 0;
+    }
+    .navlinks.responsive a {
+        position: static;
+    }
 }
 
 
@@ -96,6 +127,7 @@ body {
     flex-flow: row;
     justify-content: space-evenly;
     justify-self: end;
+    position: relative;
     text-align: center;
     gap: 10vh;
     font-size: 1.2em;
