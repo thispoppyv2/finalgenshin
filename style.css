@@ -119,8 +119,15 @@ body {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-bottom: 50px;
+    background-image: url("img/img_2.png") ;
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    background-clip: padding-box;
+    background-position-x: 100%;
+    background-position-y: 10%;
+    background-color: var(--background);
     margin-left: 25px;
+
 
 
 }
@@ -155,12 +162,33 @@ body {
     grid-row-gap: 0px;
     text-align: center;
     width: 50vh;
+    overflow: hidden;
 
 }
 
 .spotlight img {
     grid-area: 1 / 1 / 2 / 2;
+    overflow: hidden;
+}
 
+.hoverspot
+{
+    grid-area: 1 / 1 / 2 / 2;
+    place-self: self-end;
+    text-align: left;
+    background-color: var(--background);
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 44px 50px var(--background);
+    -moz-box-shadow: 0px 0px 44px 50px var(--background);
+    box-shadow: 0px 0px 44px 50px var(--background);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.spotlight:hover .hoverspot
+{
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .verspot {
@@ -185,23 +213,23 @@ body {
 
 
 .splashart {
-    grid-area: 1 / 2 / 2 / 2;
+
+
+    z-index: -1;
+    width: 100vh;
+    height: 90vh;
+
+    object-fit: cover;
+
+
 
 }
 
 .splashart img {
-    /* image 1 */
-    position: absolute;
 
-    object-fit: cover;
-
-    min-height: 25vh;
-    max-height: 100vh;
     width: 100vh;
-    display: block;
 
 
-    right: -100px;
 
 }
 
@@ -229,31 +257,13 @@ body {
 
 }
 
-.bgshowcase {
 
-
-    max-height: 1000px;
-    width: 110%;
-
-    left: -10px;
-    object-fit: cover;
-
-    position: relative;
-    overflow: hidden;
-
-    grid-area: 1 / 1 / 2 / 2;
-
-
-}
-
-.bgshowcase img {
-    overflow: hidden;
-    z-index: -2;
-}
 
 
 
 .headingsc {
+    background-image: url("img/img_3.png");
+    background-size: cover;
 
     padding: 125px;
     display: flex;
@@ -261,7 +271,7 @@ body {
     flex-basis: content;
     z-index: 1;
     font-size: 7.5em;
-
+    overflow: hidden;
     grid-area: 1 / 1 / 2 / 2;
     font-weight: 700;
     color: #E6E6E6FF;
@@ -278,16 +288,16 @@ body {
     padding-top: 50px;
     display: flex;
     flex-flow: row;
+
     gap: 50px;
     position: relative;
-    transform: translateX(-200%);
     animation: scroll ease-out;
     animation-timeline: scroll(root);
 }
 
 .scrolling img
 {
-    width: 250px;
+
 }
 
 @keyframes scroll {
@@ -296,11 +306,8 @@ body {
      {
         transform: translateX(0%);
      }
-    25% {
-        transform: translateX(10%);
-    }
     100% {
-        transform: translateX(-20%);
+        transform: translateX(-50%);
     }
 }
 
@@ -324,7 +331,7 @@ body {
     padding: 50px;
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: auto;
 
 
@@ -366,7 +373,7 @@ body {
 }
 
 .sub1 {
-    font-size: 0.5em;
+    font-size: 0.35em;
 !important;
 
     letter-spacing: 0em;
@@ -400,6 +407,7 @@ body {
     font-weight: normal;
     width: 200px;
     height: 25px;
+    margin: 10px;
     border-radius: 10px;
     color: var(--background);
 }
@@ -437,8 +445,7 @@ body {
     text-decoration: none;
     color: var(--text);
     font-size: 1.2em;
-    position: sticky;
-    top: 15vh;
+
     background: var(--background);
 
 
@@ -457,8 +464,6 @@ body {
     text-decoration: none;
     color: var(--text);
     font-size: 1.2em;
-    position: sticky;
-    top: 15vh;
     border-radius: 5px;
     background: var(--background);
 
@@ -471,16 +476,6 @@ body {
     border-radius: 10px;
 }
 
-@keyframes fadeIn {
-
-    0%
-    {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 
 .item img {
