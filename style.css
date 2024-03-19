@@ -515,20 +515,19 @@ body {
 .itemtype {
     grid-area: 2 / 2 / 3 / 3;
     background-color: var(--primary);
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 5px;
-    height: 10px;
-    max-width: 100px;
-    justify-items: center;
-    align-content: center;
+    margin-top: 15px;
+    height: 20px;
     text-align: center;
+    min-width: 100px;
+    align-self: stretch;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     font-size: 0.75em;
     justify-self: end;
     color: var(--background);
+    display: flex;
 
 }
 
