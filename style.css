@@ -278,9 +278,42 @@ body {
 
     padding-top: 50px;
     display: flex;
+    flex-flow: row;
     gap: 50px;
     position: relative;
+    transform: translateX(-200%);
+    animation: fadeIn ease-out;
+    animation-timeline: scroll(root);
 }
+
+@keyframes fadeIn {
+
+    0%
+     {
+        transform: translateX(0%);
+     }
+    25% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+@keyframes reveal {
+    0%,
+    100% {
+        translate: 0 -25%;
+        scale: 0.7;
+        opacity: 0.2;
+    }
+    50% {
+        scale: 1;
+        translate: 0;
+        opacity: 1;
+    }
+}
+
 
 .placeholder {
 
