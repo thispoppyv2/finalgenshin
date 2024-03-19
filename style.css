@@ -72,22 +72,21 @@ body {
 }
 
 .logo {
-    display: block;
-
+    display: grid;
     flex-flow: row;
     text-align: center;
-
 }
 
 .logo img {
-    position: absolute;
+
     left: 5vh;
     margin-top: -10px;
 }
 
 .navname {
-    position: absolute;
-    left: 125px;
+
+    margin-top: -50%;
+    margin-left: 100%;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -96,6 +95,7 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
+    justify-self: end;
     text-align: center;
     gap: 10vh;
     font-size: 1.2em;
