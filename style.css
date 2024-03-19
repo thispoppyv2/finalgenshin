@@ -68,6 +68,8 @@ body {
 .navlinks .icon
 {
     display: none;
+    transition: 1s;
+
 }
 
 @media screen and (max-width: 900px) {
@@ -76,7 +78,6 @@ body {
         float: right;
         display: block;
     }
-
     .hero
     {
         background-position: center;
@@ -85,15 +86,36 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .navlinks.responsive {position: absolute;}
-    .navlinks.responsive .icon {
-        position: static;
+    .navlinks.responsive {
+        position: fixed;
+        z-index: 2;
+        display: flex;
+        flex-flow: column;
+        height: auto;
         right: 0;
-        top: 0;
+        margin-right: 5px;
+        padding: 30px;
+        padding-bottom: 60px;
+        border-radius: 10px;
+        align-content: center;
+        text-align: center;
+        background-color: var(--background);
+        transition: 1s;
+    }
+    .navlinks.responsive .icon {
+        position: fixed;
+        transition: 1s;
+        top: 5%;
+        right: 5%;
+        z-index: 3;
     }
     .navlinks.responsive a {
-        position: static;
+        display: flex;
+        flex-flow: column;
+        height: 1px;
+        text-align: center;
     }
+
 }
 
 
