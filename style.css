@@ -115,7 +115,6 @@ body {
 
 }
 
-
 .hero {
 
     display: grid;
@@ -156,6 +155,9 @@ body {
 .spotlightcon {
     grid-area: 1 / 1 / 2 / 2;
     font-size: 2em;
+    width: 100%;
+
+
 }
 
 .spotlight {
@@ -212,8 +214,6 @@ body {
     border-radius: 10px;
     transition: 0.3s;
 }
-
-
 
 .verspot {
     grid-area: 1 / 1 / 2 / 2;
@@ -281,10 +281,6 @@ body {
 
 }
 
-
-
-
-
 .headingsc {
     background-image: url("img/img_3.png");
     background-size: cover;
@@ -334,8 +330,6 @@ body {
         transform: translateX(-50%);
     }
 }
-
-
 
 .placeholder {
 
@@ -500,8 +494,6 @@ body {
     border-radius: 10px;
 }
 
-
-
 .item img {
     grid-area: 1 / 1 / 2 / 3;
 }
@@ -553,4 +545,133 @@ body {
     margin-left: 75px;
 
 }
+
+.charactercard {
+
+    grid-area: 1 / 1 / 2 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 50px;
+    width: 300px;
+    height: 400px;
+}
+
+
+
+.picturecard {
+    grid-area: 1 / 1 / 2 / 3;
+
+}
+.namecard {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 2em;
+    margin-top: 10px;
+
+}
+.regioncard {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--primary);
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 30px;
+    max-width: 100px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    justify-self: end;
+    color: var(--background);
+}
+
+.charinfo{
+    display: flex;
+    flex-flow: column;
+    margin-top: 75px;
+    gap: 10px;
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 2;
+
+}
+
+.rarity img
+{
+    max-width: 75px;
+    margin-top: 10px;
+}
+.charcon
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: left;
+    justify-items: left;
+    width: 50vw;
+    height: 100%;
+    margin-bottom: 10vh;
+    justify-self: center;
+    align-self: center;
+    place-self: center;
+
+
+
+
+}
+
+.charstory{
+    white-space: pre-line;
+    display: flex;
+    width: 55vw;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    grid-area: 1 / 2 / 3 / 3;
+
+}
+
+.headercenter{
+    font-size: 3em;
+!important;
+    font-weight: 800;
+
+    margin-top: 10vh;
+    align-items: center;
+    justify-items: center;
+
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.skillcon
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    gap: 100px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skillcon1
+{
+    background: darkgrey;
+    min-width: 300px;
+    min-height: 350px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
