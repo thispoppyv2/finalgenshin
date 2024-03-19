@@ -28,6 +28,7 @@ body
         text-decoration: none;
         font-family: "Kumbh Sans", sans-serif;
         overflow-x:hidden;
+        z-index: -1;
 
 
 
@@ -205,6 +206,7 @@ body
 .splashart
     {
         grid-area: 1 / 2 / 2 / 2;
+        z-index: -1;
 
     }
 
@@ -258,7 +260,7 @@ body
 
     max-height: 1000px;
     width: 110%;
-
+    z-index: -1;
     left: -10px;
     object-fit: cover;
 
@@ -296,7 +298,7 @@ body
     display: flex;
     flex-flow: column;
     flex-basis: content;
-
+    z-index: 1;
     font-size: 7.5em;
 
     grid-area: 1 / 1 / 2 / 2;
@@ -511,7 +513,10 @@ body
 
 .changelog
 {
-    margin-left: 75px;
+
+    white-space: pre-line;
     width: 800px;
+    margin-left: 75px;
+
 }
 
