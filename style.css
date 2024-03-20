@@ -245,7 +245,7 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
-    width: 50vh;
+    width: available;
     overflow: hidden;
     transition: 0.3s;
     text-decoration: none;
