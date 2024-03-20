@@ -30,21 +30,29 @@
     .changelogbtn
     {
         width: 88vw;
+
     }
 
-    .spotlight img
+    .verspot img
     {
+        width: 90vw;
+        height: 50vh;
+        object-fit: cover;
+        border-radius: inherit;
 
     }
 
     .spotlight
     {
-       width: 90vw;
+       width: 90vw;border-radius: 16px;
     }
     .verspot
     {
         text-align: left;
+        width: 100vw;
+        height: 50vh;
         text-indent: 10px;
+
     }
 
     .showcase
@@ -63,6 +71,13 @@
     {
         margin-left: 0px; !important;
 
+    }
+
+    .scrolling
+    {
+
+        overflow: visible;
+        overflow-scrolling: touch;
     }
 }
 
