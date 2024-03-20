@@ -3,6 +3,10 @@
     {
         font-size: 1em;
         flex-flow: row;
+        overflow-x: hidden;
+
+        margin: 0px;!important;
+        padding: 0px;!important;
     }
 
     .navname
@@ -14,8 +18,7 @@
     {
 
         margin: auto;
-        padding: 10px;
-        margin-right: 10000px;
+        padding-right: 100%;
 
         background: var(--alphabg);
         border-radius: 16px;
@@ -23,6 +26,18 @@
         -webkit-backdrop-filter: blur(9.2px);
         transition: 1s;
 
+    }
+
+    .showcase
+    {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+
+    .headingsc
+    {
+        font-size: 5em;
+        padding: 25px;
     }
 }
 
