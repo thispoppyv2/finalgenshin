@@ -330,6 +330,7 @@ body {
     padding: 5px;
     border-radius: 5px;
     background-color: var(--secondary);
+    margin-bottom: 10vh;
 }
 
 .showcase {
@@ -376,10 +377,6 @@ body {
     animation-timeline: scroll(root);
 }
 
-.scrolling img
-{
-
-}
 
 @keyframes scroll {
 
