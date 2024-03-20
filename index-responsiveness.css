@@ -17,8 +17,7 @@
     .spotlightcon
     {
 
-
-        padding-right: 100%;
+        width: 100vw;
         padding-left: 5%; !important;
         background: var(--alphabg);
         border-radius: 16px;
@@ -26,6 +25,26 @@
         -webkit-backdrop-filter: blur(9.2px);
         transition: 1s;
 
+    }
+
+    .changelogbtn
+    {
+        width: 88vw;
+    }
+
+    .spotlight img
+    {
+
+    }
+
+    .spotlight
+    {
+       width: 90vw;
+    }
+    .verspot
+    {
+        text-align: left;
+        text-indent: 10px;
     }
 
     .showcase
