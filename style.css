@@ -150,6 +150,9 @@ body {
     width: auto;
     height: 50px;
     place-self: baseline;
+    padding: 0;
+    box-sizing: content-box;
+
 }
 
 .logo img {
@@ -164,7 +167,10 @@ body {
     width: 100px;
     height: 100px;
     margin-top: 10px;
+    padding: 0;
+    box-sizing: content-box;
     place-self: baseline;
+
 
 }
 
