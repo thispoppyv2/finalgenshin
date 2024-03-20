@@ -144,23 +144,28 @@ body {
 }
 
 .logo {
-    display: grid;
+    display: flex;
     flex-flow: row;
     text-align: center;
+    width: auto;
+    height: 50px;
+    place-self: baseline;
 }
 
 .logo img {
 
-    left: 5vh;
-    margin-top: -10px;
+
 }
 
 .navname {
 
-    margin-top: -50%;
-    margin-left: 100%;
     font-weight: bold;
     font-size: 1.2em;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    place-self: baseline;
+
 }
 
 .navlinks {
