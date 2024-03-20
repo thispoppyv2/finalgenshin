@@ -79,6 +79,11 @@
         overflow: visible;
         overflow-scrolling: touch;
     }
+
+    .placeholder
+    {
+        width: 25vh;
+    }
 }
 
 @media (prefers-color-scheme: light) {
