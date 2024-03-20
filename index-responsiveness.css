@@ -1,0 +1,40 @@
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+    body
+    {
+        font-size: 1em;
+        flex-flow: row;
+    }
+
+    .navname
+    {
+        font-size: initial;
+    }
+
+    .spotlightcon
+    {
+
+        margin: auto;
+        padding: 10px;
+        margin-right: 10000px;
+
+        background: var(--alphabg);
+        border-radius: 16px;
+        backdrop-filter: blur(2.5px);
+        -webkit-backdrop-filter: blur(9.2px);
+        transition: 1s;
+
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --alphabg: rgba(230, 230, 230, 0.75);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --alphabg: rgba(26, 26, 26, 0.75)
+
+    }
+}

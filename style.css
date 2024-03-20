@@ -91,13 +91,14 @@ body {
         z-index: 2;
         display: flex;
         flex-flow: column;
-        width: 75%;
-        height: 75vh;
-        padding: 30px;
-        padding-bottom: 60px;
+        width: 90vw;
+        height: 10vh;
+        padding-top: 10vw;
+        padding-right: 5vw;
+        padding-left: 2vw;
+        padding-bottom: 100vh;
         border-radius: 10px;
         justify-items: center;
-        top:0;
 
         background-color: var(--background);
         border-color: var(--text);
@@ -108,22 +109,31 @@ body {
         position: fixed;
         transition: 1s;
         height: 10px;
+        width: 10px;
         top: 5%;
         right: 5%;
         z-index: 3;
     }
     .navlinks.responsive a {
         background-color: var(--grey);
-
         display: flex;
         flex-flow: column;
         justify-items: center;
-        align-items: center;
+
         border-radius: 10px;
-        column-gap: 0px;
-        height: 50%;
+        column-gap: 1px;
+        height: 1px;
+        font-size: 1em;
         text-align: center;
+
     }
+
+    .navlinks.responsive.active a
+    {
+        color: var(--background);
+    }
+
+
 
 }
 
@@ -407,8 +417,8 @@ body {
 
 .footer {
     background-color: var(--background);
-
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -416,7 +426,7 @@ body {
     padding: 50px;
     position: absolute;
     left: 0;
-    width: 80%;
+    width: 80vw;
     height: auto;
 
 
@@ -424,6 +434,8 @@ body {
 
 .footerlinks {
     display: flex;
+
+    align-self: baseline;
     flex-wrap: wrap;
     gap: 10px;
     flex-flow: column;
@@ -436,23 +448,21 @@ body {
 }
 
 .logof {
-    display: block;
-
+    display: flex;
+    width: 100px;
     flex-flow: row;
     text-align: center;
 
 }
 
 .logof img {
-    position: absolute;
-    left: 5vh;
-    margin-top: 50px;
+
 }
 
 .navnamef {
-    position: absolute;
-    left: 125px;
-    margin-top: 60px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 10px;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -783,8 +793,32 @@ body {
 
 }
 
-.viewbtn
-{
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+    .footer
+    {
+        flex-flow: column;
+        margin-bottom: 10px;
+        place-content: center;
+        place-self: center;
+        place-items: center;
+        gap: 50px;
 
+    }
+
+    .footer > *
+    {
+       align-items: center;
+        place-self: center;
+
+    }
+
+    .footerlinks a
+    {
+        place-items: center;
+    }
+
+    .logof
+    {
+        width:170px;
+    }
 }
-
