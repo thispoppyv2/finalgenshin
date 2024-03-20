@@ -72,7 +72,7 @@ body {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 1024px) {
     .navlinks a:not(:last-child) {display: none;}
     .navlinks a.icon {
         float: right;
@@ -85,34 +85,43 @@ body {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 1024px) {
     .navlinks.responsive {
         position: fixed;
         z-index: 2;
         display: flex;
         flex-flow: column;
-        height: auto;
-        right: 0;
-        margin-right: 5px;
+        width: 75%;
+        height: 75vh;
         padding: 30px;
         padding-bottom: 60px;
         border-radius: 10px;
-        align-content: center;
-        text-align: center;
+        justify-items: center;
+        top:0;
+
         background-color: var(--background);
+        border-color: var(--text);
+        border: 1px;
         transition: 1s;
     }
     .navlinks.responsive .icon {
         position: fixed;
         transition: 1s;
+        height: 10px;
         top: 5%;
         right: 5%;
         z-index: 3;
     }
     .navlinks.responsive a {
+        background-color: var(--grey);
+
         display: flex;
         flex-flow: column;
-        height: 1px;
+        justify-items: center;
+        align-items: center;
+        border-radius: 10px;
+        column-gap: 0px;
+        height: 50%;
         text-align: center;
     }
 
