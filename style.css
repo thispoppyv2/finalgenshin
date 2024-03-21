@@ -89,7 +89,6 @@ body {
     .navlinks a.icon {
         float: right;
         display: block;
-        margin: 25px;
         height: 0px;
 
     }
