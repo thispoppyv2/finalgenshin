@@ -18,7 +18,7 @@ window.onload=function(){
     
     btn.addEventListener('click', () => {
         popup.showModal();
-        popup.click();
+        popup.focus();
         popup .scrollTop= 0;
         document.scrollingElement.scrollTop
 
@@ -36,7 +36,7 @@ window.onload=function(){
 
     btn2.addEventListener('click', () => {
         popup2.showModal();
-        popup2.click();
+        popup2.focus();
         popup2.scrollTop= 0;
         document.scrollingElement.scrollTop
 
@@ -53,7 +53,7 @@ window.onload=function(){
 
     btn3.addEventListener('click', () => {
         popup3.showModal();
-        popup3.click();
+        popup3.focus();
         document.scrollingElement.scrollTop
         popup3.scrollTop= 0;
 
