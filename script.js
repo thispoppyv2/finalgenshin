@@ -9,6 +9,7 @@ function myHamburger() {
     }
 }
 
+
 window.onload=function(){
     
     const popup = document.getElementById("popup");
@@ -18,8 +19,10 @@ window.onload=function(){
     btn.addEventListener('click', () => {
         popup.showModal();
         popup.click();
-        popup.scrollTop= 0;
-        
+        popup .scrollTop= 0;
+        document.scrollingElement.scrollTop
+
+
     })
 
     btnclose.addEventListener('click', () => {
@@ -34,8 +37,8 @@ window.onload=function(){
     btn2.addEventListener('click', () => {
         popup2.showModal();
         popup2.click();
-
         popup2.scrollTop= 0;
+        document.scrollingElement.scrollTop
 
     })
 
@@ -51,7 +54,7 @@ window.onload=function(){
     btn3.addEventListener('click', () => {
         popup3.showModal();
         popup3.click();
-
+        document.scrollingElement.scrollTop
         popup3.scrollTop= 0;
 
     })
