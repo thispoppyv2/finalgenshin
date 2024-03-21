@@ -740,6 +740,7 @@ body {
     align-self: center;
     place-self: center;
     margin-left: 10%;
+    margin-bottom: 10%;
 
 
 
@@ -752,6 +753,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 25px;
+
     margin-right: 5%;
     grid-area: 1 / 2 / 3 / 3;
 
@@ -1121,6 +1123,6 @@ body {
     -webkit-backdrop-filter: blur(100px) brightness(0.75);
     border-radius: 10px;
     padding: 10px;
-    margin: 10vw;
+    margin-bottom: 25\px;
 
 }
