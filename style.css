@@ -632,8 +632,7 @@ body {
 .itemname {
     grid-area: 2 / 1 / 3 / 2;
     margin-left: 2.5px;
-    height: 100px;
-    width: 150px;
+
     position: sticky;
 }
 
@@ -1075,14 +1074,27 @@ body {
 
     .itemregion
     {
-        height: 125px;
+        height: 150px;
+        width: available;
     }
 
     .itemregion img
     {
-        width: 400px;
 
         object-fit: cover;
+        width: 75vw;
+
+    }
+
+    .itemname
+    {
+        height: 1px;
+        margin-bottom: 1px;
+    }
+
+    .gallerycon2
+    {
+        gap:6vw;
     }
 
 
