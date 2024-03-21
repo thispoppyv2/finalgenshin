@@ -423,23 +423,22 @@ body {
     padding-top: 50px;
     display: flex;
     flex-flow: row;
-
+    transform: translateX(-100%);
     gap: 50px;
     width: 100%;
     position: relative;
-    animation: scroll ease-out;
+    animation: scroll ease-in-out;
     animation-timeline: scroll(root);
 }
 
 
 @keyframes scroll {
-
     0%
      {
-        transform: translateX(0%);
+        transform: translateX(100%);
      }
     100% {
-        transform: translateX(-20%);
+        transform: translateX(-100%);
     }
 }
 
