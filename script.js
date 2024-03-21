@@ -17,11 +17,13 @@ window.onload=function(){
     
     btn.addEventListener('click', () => {
         popup.showModal();
+        popup.scrollTo(0,0)
         
     })
 
     btnclose.addEventListener('click', () => {
         popup.close();
+
     })
 
     const popup2 = document.getElementById("popup2");
@@ -30,11 +32,13 @@ window.onload=function(){
 
     btn2.addEventListener('click', () => {
         popup2.showModal();
+        popup2.scrollTo(0,0)
 
     })
 
     btnclose2.addEventListener('click', () => {
         popup2.close();
+
     })
 
     const popup3 = document.getElementById("popup3");
@@ -43,6 +47,7 @@ window.onload=function(){
 
     btn3.addEventListener('click', () => {
         popup3.showModal();
+        popup3.scrollTo(0,0)
 
     })
 
