@@ -13,7 +13,6 @@
 <script src="../script.js"></script>
 
 
-
 <nav class="navbar">
     <div class="logo"><img src="../img/img.png" width="50px">
         <div class="navname">LoreHub</div>
@@ -88,21 +87,17 @@
 
 
     <div class="popup-content">
-        <img class="iconpop" src="../img/img_32.png" width="100px"></img>
+        <img class="iconpop" src="../img/img_28.png" width="100px"></img>
         <div class="popupheader">Normal Attacks</div>
         <span>Normal Attack
 Performs up to 4 consecutive strikes.
 
 Charged Attack
-Consumes a certain amount of Stamina to unleash a solo dance, dealing Physical DMG to nearby opponents and changing her Arkhe alignment. If Salon Members or Singer of Many Waters summoned by her Elemental Skill "Salon Solitaire" are present, their lineup will switch in response.
-
-Arkhe: Seats Sacred and Secular
-At intervals, when Furina's Normal Attacks hit, a Spiritbreath Thorn or a Surging Blade will descend based on her current alignment, dealing Hydro DMG based on her current alignment.
-When Furina takes the field, her starting Arkhe will be Ousia.
+Drains Stamina over time to perform continuous spinning attacks against all nearby opponents.
+At the end of the sequence, performs a more powerful slash.
 
 Plunging Attack
-Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.
-        </span>
+Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</span>
         <button class="popupclosebtn" id="popupclosebtn" >Close</button>
     </div>
 </dialog>
@@ -110,20 +105,14 @@ Plunges from mid-air to strike the ground below, damaging opponents along the pa
 <dialog class="popup" id="popup2">
 
     <div class="popup-content">
-        <img class="iconpop" src="../img/img_33.png" width="100px"></img>
+        <img class="iconpop" src="../img/img_29.png" width="100px"></img>
         <div class="popupheader">Elemental Skill</div>
-        <span>Invites the guests of the Salon Solitaire to come forth and aid in Furina's performance. Will summon either the Salon Members or the Singer of Many Waters based on Furina's current Arkhe alignment.
+        <span>Pounces forward using the Wushou arts, leaping high into the air after coming into contact with a target or surface.
+After Gaming has used Bestial Ascent to rise into the air, he will use the especially powerful Plunging Attack: Charmed Cloudstrider when performing a Plunging Attack.
 
-Ousia
-Foaming bubbles like celebrants shall dance, dealing AoE Hydro DMG based on Furina's Max HP and summoning 3 Salon Members: the Ball Octopus-shaped Gentilhomme Usher, the Bubbly Seahorse-shaped Surintendante Chevalmarin, and the Armored Crab-shaped Mademoiselle Crabaletta.
-They will attack nearby opponents at intervals, prioritizing the target of the active character, dealing Hydro DMG based on Max HP.
-When they attack, if character(s) with more than 50% HP are nearby, the Members will increase their current attack's power based on the number of such characters, and consume said characters' HP. If the characters who meet these requirements are 1/2/3/4 (or more), the Members' attacks will deal 110%/120%/130%/140% of their original DMG.
-
-Pneuma
-Summons the Singer of Many Waters, who will heal nearby active character(s) based on Max HP at intervals.
-
-The Salon Members and Singer of Many Waters share a duration, and when Furina uses her Charged Attack to change the guest type, the new guests will inherit the initial duration.
-While the Salon Members and the Singer of Many Waters are on the field, Furina can move on the water's surface.
+Plunging Attack: Charmed Cloudstrider
+The DMG from Plunging Attacks caused by Bestial Ascent is converted to Pyro DMG that cannot be overridden by other elemental infusions. Upon landing, Gaming will consume a fixed amount of HP. Gaming's HP cannot be reduced below 10% by this method.
+Charmed Cloudstrider DMG is considered Plunging Attack DMG.
         </span>
         <button class="popupclosebtn" id="popupclosebtn2" >Close</button>
     </div>
@@ -132,12 +121,15 @@ While the Salon Members and the Singer of Many Waters are on the field, Furina c
 <dialog class="popup" id="popup3">
 
     <div class="popup-content">
-        <img class="iconpop" src="../img/img_34.png" width="100px"></img>
+        <img class="iconpop" src="../img/img_30.png" width="100px"></img>
         <div class="popupheader">Elemental Burst</div>
-        <span>Rouses the impulse to revel, creating a stage of foam that will deal AoE Hydro DMG based on Furina's Max HP and cause nearby party members to enter the Universal Revelry state: During this time, when nearby party members' HP increases or decreases, 1 Fanfare point will be granted to Furina for each percentage point of their Max HP by which their HP changes.
+        <span>Gaming enters Wushou Stance, briefly applying Pyro to him, recovering a fixed amount of HP, and summons his companion, the Suanni Man Chai, to smash into his target, dealing AoE Pyro DMG.
 
-At the same time, Furina will increase the DMG dealt by and Incoming Healing Bonus of all nearby party members based on the amount of Fanfare she has.
-When the duration ends, Furina's Fanfare points will be cleared.
+After bashing its target, Man Chai will roll to a nearby location before moving towards Gaming. When it links up with Gaming, Man Chai will leave the field and reset the CD for Gaming's Elemental Skill, Bestial Ascent.
+While Wushou Stance is active, his resistance to interruption is increased, and when Gaming lands with Charmed Cloudstrider attack or completes the forward pounce attack from Bestial Ascent with over 50% HP, he will summon Man Chai again.
+
+Each Gaming can only have 1 Man Chai on the field simultaneously.
+This effect will be canceled once Gaming leaves the field.
         </span>
         <button class="popupclosebtn" id="popupclosebtn3" >Close</button>
     </div>

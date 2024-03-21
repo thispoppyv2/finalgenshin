@@ -62,9 +62,7 @@ window.onload=function(){
     btnclose3.addEventListener('click', () => {
         popup3.close();
     })
-    
+
+
 }
-
-
-
 
