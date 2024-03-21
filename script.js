@@ -18,7 +18,7 @@ window.onload=function(){
     btn.addEventListener('click', () => {
         popup.showModal();
         popup.click();
-        popup.scrollTo(0,0)
+        popup.scrollTop= 0;
         
     })
 
@@ -34,7 +34,8 @@ window.onload=function(){
     btn2.addEventListener('click', () => {
         popup2.showModal();
         popup2.click();
-        popup2.scrollTo(0,0)
+
+        popup2.scrollTop= 0;
 
     })
 
@@ -50,7 +51,8 @@ window.onload=function(){
     btn3.addEventListener('click', () => {
         popup3.showModal();
         popup3.click();
-        popup3.scrollTo(0,0)
+
+        popup3.scrollTop= 0;
 
     })
 
