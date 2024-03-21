@@ -516,11 +516,13 @@ body {
     font-weight: 800;
     margin-top: 25px;
     margin-left: 75px;
+    margin-right: 75px;
     padding-bottom: 25px;
     display: flex;
-    align-items: center;
+
     justify-items: center;
     gap: 10px;
+    width: 100%;
 
 }
 
@@ -529,13 +531,13 @@ body {
     font-size: 0.4em;
 !important;
     background-color: var(--primary);
-    padding: 5px;
     text-align: center;
     justify-self: center;
     align-items: center;
     font-weight: normal;
-    width: 200px;
-    height: 25px;
+    max-width: 200px;
+    padding: 10px;
+    height: fit-content;
     margin: 10px;
     border-radius: 10px;
     color: var(--background);
@@ -546,13 +548,13 @@ body {
     font-size: 0.4em;
 !important;
     background-color: var(--grey);
-    padding: 5px;
     text-align: center;
     justify-self: center;
     align-items: center;
     font-weight: normal;
-    width: 200px;
-    height: 25px;
+    max-width: 200px;
+    padding: 10px;
+    height: fit-content;
     margin: 10px;
     border-radius: 10px;
     color: var(--text);
@@ -1052,6 +1054,41 @@ body {
         margin-top: 25px;
         margin-bottom: 50px;
     }
+
+    .header{
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .changelogbtnsmall
+    {
+        width: 100vw;
+
+    }
+
+    .changelogbtnsmall2
+    {
+        width: 100vw;
+        height: 0;
+
+    }
+
+    .itemregion
+    {
+        height: 125px;
+    }
+
+    .itemregion img
+    {
+        width: 400px;
+
+        object-fit: cover;
+    }
+
+
+
+
+
 
 }
 
