@@ -53,6 +53,7 @@ body {
     height: 5vh;
     display: flex;
     flex-flow: row;
+    align-items: baseline;
     text-align: center;
     justify-content: space-between;
     position: static;
@@ -61,7 +62,7 @@ body {
     overflow: hidden;
     padding: 25px;
     padding-left: 25px;
-    padding-top: 0px;
+    padding-top: 20px;
     margin-bottom: 0px;
     background: var(--background);
     -webkit-box-shadow: 0px 0px 115px 6px var(--background);
@@ -83,7 +84,9 @@ body {
     .navlinks a.icon {
         float: right;
         display: block;
-        padding: 25px;
+        margin: 25px;
+        height: 0px;
+
     }
     .hero
     {
@@ -99,8 +102,8 @@ body {
         display: flex;
         flex-flow: column;
         width: 100vw;
-        height: 10vh;
-        padding-top: 25%;
+        height: 500px;
+        padding-top: 20vw;
         padding-right: 5vw;
         padding-left: 0vw;
         padding-bottom: 100vh;
@@ -138,6 +141,11 @@ body {
     .navlinks.responsive.active a
     {
         color: var(--background);
+    }
+
+    .navbar
+    {
+        padding: 5vh;
     }
 
 
@@ -741,7 +749,6 @@ body {
     flex-wrap: wrap;
     margin-top: 25px;
     margin-right: 25%;
-
     grid-area: 1 / 2 / 3 / 3;
 
 }
@@ -811,158 +818,113 @@ body {
     justify-items: center;
 
 }
-.popupcon
-{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-.popup
-{
-    position: fixed;
-    width: 75vw;
-    height: fit-content;
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-    padding: 3vw;
-    z-index: 1;
-    display: none;
-    background-color: var(--popupbg);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    flex-flow: column;
-    overflow: scroll;
-    gap: 25px;
-    white-space: pre-wrap;
-    grid-area: 1 / 1 / 2 / 2;
 
+.popup{
 
-}
-
-.popup.enable
-{
-    display: grid;
-
-}
-
-.popup2
-{
-    position: fixed;
-    width: 75vw;
-    height: fit-content;
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-    padding: 3vw;
-    z-index: 1;
-    display: none;
-    background-color: var(--popupbg);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    flex-flow: column;
-    overflow: scroll;
-    gap: 25px;
-    white-space: pre-wrap;
-    grid-area: 1 / 1 / 2 / 2;
-
-
-}
-
-.popup2.enable
-{
-    display: grid;
-
-}
-
-.popup3
-{
-    position: fixed;
-    width: 75vw;
-    height: fit-content;
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-    padding: 3vw;
-    z-index: 1;
-    display: none;
-    background-color: var(--popupbg);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    flex-flow: column;
-    overflow: scroll;
-    gap: 25px;
-    white-space: pre-wrap;
-    grid-area: 1 / 1 / 2 / 2;
-
-
-}
-
-.popup3.enable
-{
-    display: grid;
-
-}
-
-.iconpopup
-{
-
-    display: none;
-    width: 10vh;
-    height: 10vh;
-    z-index: 2;
-    top: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
-    padding: 50vw;
-    padding-top: 10%;
-    margin: 0px;
-    grid-area: 1 / 1 / 2 / 2;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+    backdrop-filter: blur(10px);
 
-}.iconpopup.enable
- {
-    display: grid;
-     position: fixed;
- }
-.popup.enable body
-{
-    overflow: hidden;
 
 
 }
 
-.popupbtn
+.iconpop
 {
-    width: 100%;
-    height: 25px;
-    text-decoration: none;
-    color: var(--text);
-    text-align: center;
-    background: var(--hydro);
-    padding: 5px;
-    border-radius: 5px;
+
     place-self: center;
+
+}
+
+
+.popupbtnhydro
+{
+    all: unset;
+    cursor: pointer;
+    color: var(--text);
+    background: var(--hydro);
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.popupbtnpyro
+{
+    all: unset;
+    cursor: pointer;
+    color: var(--text);
+    background: var(--pyro);
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+
 }
 
 .popupclosebtn
 {
-    width: 10%;
-    height: auto;
-    text-decoration: none;
-    color: var(--text);
-    text-align: center;
-    background: var(--hydro);
-    padding: 5px;
+    all: unset;
+    cursor: pointer;
+    color: #1A1A1AFF;
+    background: #ff7676;
+    height: 30px;
     border-radius: 5px;
+    text-align: center;
+    width: 100px;
     place-self: end;
 }
+
+
+
+.popupbtn:hover
+{
+
+}
+
+
+.popup-content
+{
+    white-space: pre-wrap;
+    background-color: var(--background);
+    width: 50vw;
+    height: fit-content;
+    padding:2.5vw;
+    gap: 20px;
+    border-radius: 10px;
+    color: var(--text);
+    overflow-y: scroll;
+    place-self: center;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
 
 .popupheader
 {
     font-size: 2em;
+    font-weight: 800;
+}
+
+.popupcon::backdrop
+{
+    background-color: rgb(0 0 0 / 0.75);
 }
 
 .dark
@@ -1006,11 +968,58 @@ body {
     {
         flex-flow: column;
         justify-items: center;
+        margin: 0px;
+        padding: 1vw;
+    }
+
+    .charstory
+    {
+       width: 90vw;
     }
 
     .charactercard
     {
         place-self: center;
+        margin-bottom: 100px;
+    }
+
+    .picturecard
+    {
+        width: 100%;
+    }
+
+    body
+    {
+
+    }
+
+    .popup-content
+    {
+        width: 80%;
+        padding:7vw;
+        top: 10vh;
+        left: 2vw;
+        -webkit-transform: translateX(-0%) translateY(-0%);
+        -moz-transform: translateX(-0%) translateY(-0%);
+        -ms-transform: translateX(-0%) translateY(-0%);
+        transform: translateX(-0%) translateY(-0%);
+
+    }
+
+    .iconpop
+    {
+        place-self: baseline;
+
+    }
+
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .iconpop
+    {
+        padding: 1%;
+
     }
 }
 

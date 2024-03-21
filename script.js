@@ -1,3 +1,5 @@
+
+
 function myHamburger() {
     var x = document.getElementById("myTopnav");
     if (x.className === "navlinks") {
@@ -7,40 +9,48 @@ function myHamburger() {
     }
 }
 
-function popup() {
-    var x = document.getElementById("normalatkpp");
-    if (x.className === "popup") {
-        x.className += " enable";
-    } else {
-        x.className = "popup";
-    }
+window.onload=function(){
+    
+    const popup = document.getElementById("popup");
+    const btn = document.getElementById("popupbtn");
+    const btnclose = document.getElementById("popupclosebtn")
+    
+    btn.addEventListener('click', () => {
+        popup.showModal();
+        
+    })
 
-    var y = document.getElementById("iconpopup");
-    if (y.className === "iconpopup") {
-        y.className += " enable";
-    } else {
-        y.className = "iconpopup";
-    }
+    btnclose.addEventListener('click', () => {
+        popup.close();
+    })
+
+    const popup2 = document.getElementById("popup2");
+    const btn2 = document.getElementById("popupbtn2");
+    const btnclose2 = document.getElementById("popupclosebtn2")
+
+    btn2.addEventListener('click', () => {
+        popup2.showModal();
+
+    })
+
+    btnclose2.addEventListener('click', () => {
+        popup2.close();
+    })
+
+    const popup3 = document.getElementById("popup3");
+    const btn3 = document.getElementById("popupbtn3");
+    const btnclose3 = document.getElementById("popupclosebtn3")
+
+    btn3.addEventListener('click', () => {
+        popup3.showModal();
+
+    })
+
+    btnclose3.addEventListener('click', () => {
+        popup3.close();
+    })
+    
 }
-
-function popup2() {
-    var x = document.getElementById("skillpp");
-    if (x.className === "popup2") {
-        x.className += " enable";
-    } else {
-        x.className = "popup2";
-    }
-}
-
-function popup3() {
-    var x = document.getElementById("burstpp");
-    if (x.className === "popup3") {
-        x.className += " enable";
-    } else {
-        x.className = "popup3";
-    }
-}
-
 
 
 
