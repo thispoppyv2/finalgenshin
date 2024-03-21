@@ -8,11 +8,14 @@
         --font-family: "Kumbh Sans", sans-serif;
         --grey: #dcdcdc;
         --popupbg: rgba(230,230,230,0.75);
+        --bgdisablelight: rgba(230,230,230,0.95);
+        --blur: blur(100px) ;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --bgdisablelight: 0;
         --text: #ebf2e8;
         --background: #1a1a1a;
         --primary: #83ee49;
@@ -21,6 +24,7 @@
         --font-family: "Kumbh Sans", sans-serif;
         --grey: #3f3f3f;
         --popupbg: rgba(26,26,26,0.75);
+        --blur: blur(100px) brightness(0.75);
     }
 }
 
@@ -737,6 +741,7 @@ body {
     height: 100%;
     margin-bottom: 10vh;
     justify-self: center;
+    overflow: hidden;
     align-self: center;
     place-self: center;
     margin-left: 10%;
@@ -973,7 +978,7 @@ body {
         justify-items: center;
         margin: 0px;
         padding: 1vw;
-        padding-right: 100vw;
+        padding-right: 25vw;
 
     }
 
@@ -1097,11 +1102,12 @@ body {
 .charcon
 
 {
-    backdrop-filter: blur(100px) brightness(0.75);
-    -webkit-backdrop-filter: blur(100px) brightness(0.75);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
     padding-bottom: 50px;
     border-radius: 10px;
     width: 80%;
+    background-color: var(--bgdisablelight);
 }
 
 .bgsplash
@@ -1119,10 +1125,11 @@ body {
 
 .skillset
 {
-    backdrop-filter: blur(100px) brightness(0.75);
-    -webkit-backdrop-filter: blur(100px) brightness(0.75);
+    background-color: var(--bgdisablelight);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 25\px;
+    margin-bottom: 25px;
 
 }
