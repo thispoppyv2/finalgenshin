@@ -1076,6 +1076,7 @@ body {
     {
         height: 150px;
         width: available;
+        margin-right: auto;
     }
 
     .itemregion img
@@ -1090,6 +1091,7 @@ body {
     {
         height: 1px;
         margin-bottom: 1px;
+
     }
 
     .gallerycon2
