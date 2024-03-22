@@ -52,7 +52,7 @@ body {
 }
 
 .wrapper {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 
@@ -1095,12 +1095,12 @@ body {
     }
 
     .wrapper {
-        overflow-x: hidden;
+       /* overflow-x: hidden;
         overflow-y: scroll;
     !important;
         position: relative;
         width: 100%;
-
+*/
     }
 
     .mission-container
