@@ -19,7 +19,7 @@ window.onload=function(){
     btn.addEventListener('click', () => {
         popup.showModal();
         popup.focus();
-        popup .scrollTop= 0;
+        popup.scroll({ top: -1, left: 0, behavior: "smooth" });
         document.scrollingElement.scrollTop
 
 
@@ -37,7 +37,7 @@ window.onload=function(){
     btn2.addEventListener('click', () => {
         popup2.showModal();
         popup2.focus();
-        popup2.scrollTop= 0;
+        popup2.scroll({ top: -1, left: 0, behavior: "smooth" });
         document.scrollingElement.scrollTop
 
     })
@@ -55,7 +55,7 @@ window.onload=function(){
         popup3.showModal();
         popup3.focus();
         document.scrollingElement.scrollTop
-        popup3.scrollTop= 0;
+        popup3.scroll({ top: -1, left: 0, behavior: "smooth" });
 
     })
 
