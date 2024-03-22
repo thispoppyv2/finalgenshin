@@ -43,7 +43,6 @@ body {
     text-decoration: none;
     font-family: "Kumbh Sans", sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll; !important;
     overscroll-behavior-x: none;
     scroll-behavior: smooth;
     transition: 1s;
@@ -51,8 +50,14 @@ body {
     margin: 0;
 }
 
-.wrapper {
+html, body {
+    overflow-x: hidden;
 }
+body {
+    position: relative
+}
+
+
 
 
 
@@ -85,7 +90,7 @@ body {
 
 }
 
-@media screen and (min-width: 300px) and (max-width: 1024px) {
+@media screen and (min-width: 300px) and (max-width: 860px) {
     .navlinks a:not(:last-child) {
         display: none;
     }
@@ -103,7 +108,7 @@ body {
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 1024px) {
+@media screen and (min-width: 300px) and (max-width: 860px) {
     .navlinks.responsive {
         position: fixed;
         z-index: 2;
@@ -481,9 +486,8 @@ body {
 
 .logof {
     display: flex;
-    width: 100px;
     flex-flow: row;
-    text-align: center;
+    place-self: start;
 
 }
 
@@ -952,7 +956,7 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (min-width: 50px) and (max-width: 1024px) {
+@media screen and (min-width: 50px) and (max-width: 800px) {
     .footer {
         flex-flow: column;
         margin-bottom: 10px;
@@ -964,17 +968,15 @@ body {
     }
 
     .footer > * {
-        align-items: center;
-        place-self: center;
+
 
     }
 
     .footerlinks a {
-        place-items: center;
+
     }
 
     .logof {
-        width: 170px;
     }
 
     .charcon {
@@ -1049,6 +1051,12 @@ body {
     .header {
         flex-flow: column;
         align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    .gallerycon, .gallerycon2
+    {
+        margin-left: 8%;
     }
 
     .changelogbtnsmall {
