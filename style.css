@@ -43,7 +43,7 @@ body {
     text-decoration: none;
     font-family: "Kumbh Sans", sans-serif;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll; !important;
     overscroll-behavior-x: none;
     scroll-behavior: smooth;
     transition: 1s;
@@ -52,11 +52,6 @@ body {
 }
 
 .wrapper {
-     overflow-x: hidden;
-     overflow-y: scroll; !important;
-     position: relative;
-     width: 100%;
-
 }
 
 
