@@ -34,6 +34,14 @@
     --hydro: #2D7EBB;
     --pyro: #9E614E;
 }
+
+html, body {
+    position:relative;
+    overflow-x:hidden;
+    height: 100%;
+    width: 100%;
+}
+
 body {
 
     color: var(--text);
