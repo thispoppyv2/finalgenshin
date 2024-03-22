@@ -699,6 +699,12 @@ body {
 
 .picturecard {
     grid-area: 1 / 1 / 2 / 3;
+}
+
+.picturecard img
+
+{
+    border-radius: 10px;
 
 }
 
@@ -712,16 +718,12 @@ body {
     grid-area: 2 / 2 / 3 / 3;
     background-color: rgba(255,255,255,0.2);
     backdrop-filter: blur(10px);
-    padding-left: 30px;
-    padding-right: 30px;
     height: 30px;
-    max-width: 100px;
-    justify-content: center;
-    align-content: center;
+    min-width: 110px;
     text-align: center;
+    align-content: center;
     border-radius: 5px;
     font-size: 1em;
-    justify-self: end;
 
     color: var(--text);
 }
