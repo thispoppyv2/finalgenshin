@@ -13,6 +13,8 @@
 <body>
 <script src="../script.js"></script>
 
+<div class="wrapper">
+
 <nav class="navbar">
     <div class="logo"><img src="../img/img.png" width="50px">
         <div class="navname">LoreHub</div>
@@ -68,43 +70,101 @@
         <div class="skillcon1">
             <img class="icon1" src="../img/img_21.png" width="100px"></img>
             <div class="skillname"> Normal Attacks </div>
+            <button class="popupbtnhydro" id="popupbtn">View More</button>
         </div>
 
         <div class="skillcon1">
             <img class="icon1" src="../img/img_22.png" width="100px"></img>
             <div class="skillname"> Elemental Skill </div>
+            <button class="popupbtnhydro" id="popupbtn2">View More</button>
 
         </div>
 
         <div class="skillcon1">
             <img class="icon1" src="../img/img_23.png" width="100px"></img>
             <div class="skillname"> Elemental Burst </div>
+            <button class="popupbtnhydro" id="popupbtn3">View More</button>
         </div>
     </div>
 
 </div>
 
 
-<div class="footer">
-    <div class="logof"><img src="../img/img.png" width="50px" height="50px">
-        <div class="navnamef">LoreHub</div>
-    </div>
+    <div class="footer">
+        <div class="logof"><img src="../img/img.png" width="50px" height="50px">
+            <div class="navnamef">LoreHub</div>
+        </div>
 
 
-    <div class="footerlinks" >
-        Overview
-        <a href="index.html">What is LoreHub?</a>
-        <a href="update.html">About Us</a>
-        <a href="charegion.html">Privacy Policy</a>
-        <a href="changelog.html">Terms of Use</a>
+        <div class="footerlinks" >
+            Overview
+            <a href="../commonpages/what.html">What is LoreHub?</a>
+            <a href="../commonpages/about.html">About Us</a>
+            <a href="../commonpages/privacy.html">Privacy Policy</a>
+            <a href="../commonpages/terms.html">Terms of Use</a>
+        </div>
+
+        <div class="footerlinks" >
+            Community
+            <a href="https://discord.com/">Discord</a>
+        </div>
     </div>
 
-    <div class="footerlinks" >
-        Community
-        <a href="">Discord</a>
-    </div>
 </div>
 
+<dialog class="popup" id="popup">
+    <div class="popup-content">
+        <img class="iconpop" src="../img/img_21.png" width="100px"></img>
+        <div class="popupheader">Normal Attacks</div>
+        <span>Normal Attack
+With light flourishes, Neuvillette commands the tides to unleash a maximum of 3 attacks, dealing Hydro DMG.
+
+Charged Attack Empowerment: Legal Evaluation
+While charging up, Neuvillette will gather the power of water, forming it into a Seal of Arbitration. In this state, Neuvillette can move and change facing, and also absorb any Sourcewater Droplets in a certain AoE.
+Every Droplet he absorbs will increase the formation speed of the Seal, and will heal Neuvillette.
+When the charging is stopped, if the Symbol has yet to be formed, then a Charged Attack will be unleashed. If it has been formed, then a Charged Attack: Equitable Judgment will be unleashed.
+
+Charged Attack
+Consumes a fixed amount of Stamina to attack opponents with a rupturing blast of water, dealing AoE Hydro DMG.
+
+Charged Attack: Equitable Judgment
+Unleashes surging torrents, dealing continuous AoE Hydro DMG to all opponents in a straight-line area in front of him.
+Equitable Judgment will not consume any Stamina and lasts 3s.
+If Neuvillette's HP is above 50%, he will continuously lose HP while using this attack.
+
+Plunging Attack
+Gathering the might of Hydro, Neuvillette plunges towards the ground from mid-air, damaging all opponents in his path. Deals AoE Hydro DMG upon impact with the ground.
+        </span>
+        <button class="popupclosebtn" id="popupclosebtn" >Close</button>
+    </div>
+</dialog>
+
+<dialog class="popup" id="popup2">
+
+    <div class="popup-content">
+        <img class="iconpop" src="../img/img_22.png" width="100px"></img>
+        <div class="popupheader">Elemental Skill</div>
+        <span>Summons a Raging Waterfall that will deal AoE Hydro DMG to opponents in front of Neuvillette based on his Max HP. After hitting an opponent, this skill will generate 3 Sourcewater Droplets near that opponent.
+
+Arkhe: Pneuma
+At certain intervals, when the Raging Waterfall descends, a Spiritbreath Thorn will descend that will pierce opponents, dealing Pneuma-aligned Hydro DMG.
+        </span>
+        <button class="popupclosebtn" id="popupclosebtn2" >Close</button>
+    </div>
+</dialog>
+
+<dialog class="popup" id="popup3">
+
+    <div class="popup-content">
+        <img class="iconpop" src="../img/img_23.png" width="100px"></img>
+        <div class="popupheader">Elemental Burst</div>
+        <span>Unleashes waves that will deal AoE Hydro DMG based on Neuvillette's Max HP.
+
+After a short interval, 2 waterfalls will descend and deal Hydro DMG in a somewhat smaller AoE, and will generate 6 Sourcewater Droplets within an area in front.
+        </span>
+        <button class="popupclosebtn" id="popupclosebtn3" >Close</button>
+    </div>
+</dialog>
 
 </body>
 </html>

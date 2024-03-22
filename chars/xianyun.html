@@ -12,7 +12,7 @@
 </head>
 <body>
 <script src="../script.js"></script>
-
+<div class="wrapper">
 <nav class="navbar">
     <div class="logo"><img src="../img/img.png" width="50px">
         <div class="navname">LoreHub</div>
@@ -66,42 +66,101 @@
         <div class="skillcon1">
             <img class="icon1" src="../img/img_19.png" width="100px"></img>
             <div class="skillname"> Normal Attacks </div>
+            <button class="popupbtnanemo" id="popupbtn">View More</button>
         </div>
 
         <div class="skillcon1">
             <img class="icon1" src="../img/img_24.png" width="100px"></img>
             <div class="skillname"> Elemental Skill </div>
+            <button class="popupbtnanemo" id="popupbtn2">View More</button>
 
         </div>
 
         <div class="skillcon1">
             <img class="icon1" src="../img/img_25.png" width="100px"></img>
             <div class="skillname"> Elemental Burst </div>
+            <button class="popupbtnanemo" id="popupbtn3">View More</button>
         </div>
     </div>
 
 </div>
 
+    <div class="footer">
+        <div class="logof"><img src="../img/img.png" width="50px" height="50px">
+            <div class="navnamef">LoreHub</div>
+        </div>
 
-<div class="footer">
-    <div class="logof"><img src="../img/img.png" width="50px" height="50px">
-        <div class="navnamef">LoreHub</div>
+
+        <div class="footerlinks" >
+            Overview
+            <a href="../commonpages/what.html">What is LoreHub?</a>
+            <a href="../commonpages/about.html">About Us</a>
+            <a href="../commonpages/privacy.html">Privacy Policy</a>
+            <a href="../commonpages/terms.html">Terms of Use</a>
+        </div>
+
+        <div class="footerlinks" >
+            Community
+            <a href="https://discord.com/">Discord</a>
+        </div>
     </div>
 
+    <dialog class="popup" id="popup">
+        <div class="popup-content">
+            <img class="iconpop" src="../img/img_19.png" width="100px"></img>
+            <div class="popupheader">Normal Attacks</div>
+            <span>Normal Attack
+Summons swirling winds to perform up to 4 attacks, dealing Anemo DMG.
 
-    <div class="footerlinks" >
-        Overview
-        <a href="index.html">What is LoreHub?</a>
-        <a href="update.html">About Us</a>
-        <a href="charegion.html">Privacy Policy</a>
-        <a href="changelog.html">Terms of Use</a>
-    </div>
+Charged Attack
+Consumes a certain amount of Stamina and launches a Breeze Bolt in a straight line that deals Anemo DMG to opponents along its path.
 
-    <div class="footerlinks" >
-        Community
-        <a href="">Discord</a>
-    </div>
+Plunging Attack
+Gathers the power of Anemo and plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Anemo DMG upon impact with the ground.
+            </span>
+            <button class="popupclosebtn" id="popupclosebtn" >Close</button>
+        </div>
+    </dialog>
+
+    <dialog class="popup" id="popup2">
+
+        <div class="popup-content">
+            <img class="iconpop" src="../img/img_24.png" width="100px"></img>
+            <div class="popupheader">Elemental Skill</div>
+            <span>Xianyun enters the Cloud Transmogrification state, in which she will not take Fall DMG, and uses Skyladder once.
+In this state, her Plunging Attack will be converted into Driftcloud Wave instead, which deals AoE Anemo DMG and ends the Cloud Transmogrification state. This DMG is considered Plunging Attack DMG.
+Each use of Skyladder while in this state increases the DMG and AoE of the next Driftcloud Wave used.
+
+Skyladder
+Can be used while in mid-air. Xianyun leaps forward, dealing Anemo DMG to targets along her path.
+During each Cloud Transmogrification state Xianyun enters, Skyladder may be used up to 3 times and only 1 instance of Skyladder DMG can be dealt to any one opponent.
+If Skyladder is not used again in a short period, the Cloud Transmogrification state will be canceled.
+
+If Xianyun does not use Driftcloud Wave while in this state, the next CD of White Clouds at Dawn will be decreased by 3s.</span>
+            <button class="popupclosebtn" id="popupclosebtn2" >Close</button>
+        </div>
+    </dialog>
+
+    <dialog class="popup" id="popup3">
+
+        <div class="popup-content">
+            <img class="iconpop" src="../img/img_25.png" width="100px"></img>
+            <div class="popupheader">Elemental Burst</div>
+            <span>Brings forth a sacred breeze that deals AoE Anemo DMG and heals all nearby characters based on Xianyun's ATK. It will also summon the "Starwicker" mechanism.
+
+Starwicker 
+
+Continuously follows the active character and periodically heals all nearby party members based on Xianyun's ATK.
+Starts with 8 stacks of Adeptal Assistance. While Adeptal Assistance is active, nearby active characters in the party will have their jump height increased.
+When the active character completes a Plunging Attack, Starwicker will consume 1 stack of Adeptal Assistance and deal AoE Anemo DMG.
+
+Only 1 Starwicker can exist simultaneously.
+        </span>
+            <button class="popupclosebtn" id="popupclosebtn3" >Close</button>
+        </div>
+    </dialog>
+
+
 </div>
-
 </body>
 </html>
