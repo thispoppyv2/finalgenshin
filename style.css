@@ -38,6 +38,7 @@
 html, body {
     position:relative;
     overflow-x:hidden;
+    width: 100%;
 }
 
 body {
