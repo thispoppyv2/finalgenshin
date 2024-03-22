@@ -420,21 +420,23 @@ body {
     padding-top: 50px;
     display: flex;
     flex-flow: row;
-    transform: translateX(-100%);
     gap: 50px;
     width: 100%;
     position: relative;
     animation: scroll ease-in-out;
-    animation-timeline: scroll(root);
+    animation-timeline: scroll(root) ;
+    animation-duration: 10s;
+    transition: 1s;
+    transform: translateX(-50%);
 }
 
 
 @keyframes scroll {
-    0% {
-        transform: translateX(100%);
+    from {
+        transform: translateX(-20%);
     }
-    100% {
-        transform: translateX(-100%);
+    to {
+        transform: translateX(-50%);
     }
 }
 
