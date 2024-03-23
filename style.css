@@ -552,7 +552,7 @@ body {
 !important;
     font-weight: 800;
     margin-top: 25px;
-    margin-left: 10vw;
+    margin-left: 9vw;
     margin-right: 75px;
     padding-bottom: 25px;
     display: flex;
@@ -598,7 +598,7 @@ body {
 
 
 .gallerycon {
-    margin-left: 9vw;
+    margin-left:8vw;
     display: flex;
     flex-flow: row;
     row-gap: 65px;
@@ -610,7 +610,7 @@ body {
 
 
 .gallerycon2 {
-    margin-left: 9vw;
+    margin-left: 8vw;
     display: flex;
     flex-flow: column;
     gap:10px;
