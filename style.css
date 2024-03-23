@@ -60,6 +60,11 @@ body {
     height: 100vh;
 }
 .wrapper{
+
+}
+
+ body >*>*
+{
     overflow: hidden;
 }
 
