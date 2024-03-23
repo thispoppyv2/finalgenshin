@@ -691,7 +691,7 @@ body {
     align-items: center;
     justify-items: center;
     gap: 10px;
-    width: 100%;
+    width:60%;
 }
 
 .changelog {
