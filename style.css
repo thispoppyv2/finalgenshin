@@ -77,11 +77,13 @@ body {
     align-items: baseline;
     text-align: center;
     justify-content: space-between;
-    position: static;
+    position: sticky;
+    top: 0;
     background: var(--background);
     overflow: hidden;
     padding: 25px;
     padding-top: 20px;
+    z-index: 5;
     margin-bottom: 0px;
     background: var(--background);
     -webkit-box-shadow: 0px 25px 32px -7px var(--background);
@@ -465,14 +467,14 @@ body {
 
 @keyframes scroll {
     0% {
-        transform: translateX(-20%);
+        transform: translateX(-20vw);
     }
     50% {
-        transform: translateX(-100%);
+        transform: translateX(-50vw);
     }
 
     100% {
-        transform: translateX(-20%);
+        transform: translateX(-20vw);
     }
 }
 
@@ -1296,14 +1298,16 @@ body {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    gap: 50px;
+    width: 100%;
+    gap: 5vw;
+    margin: auto;
 }
 
 .aimto
 {
     margin-right: 50px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 10vw;
     height: 100%;
     font-size: 3em;
     place-self: center;
@@ -1316,8 +1320,7 @@ body {
 {
     display: flex;
     flex-flow: column;
-    margin: auto;
-    margin-left: 0;
+    margin-left: 5vw;
     gap: 20px;
 
 
@@ -1330,4 +1333,9 @@ body {
     font-size: 2em;
     width: 80%;
     margin: auto;
+}
+
+.filler{
+
+    height: 25vh;
 }
