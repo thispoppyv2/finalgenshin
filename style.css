@@ -1257,11 +1257,13 @@ body {
 
     }
 
+
+
 }
 
 .content-wrapper {
 
-    margin-left: 9vw;
+    margin-left: 8vw;
     width: 50%;
     white-space: pre-line;
 
@@ -1321,7 +1323,6 @@ body {
 {
     display: flex;
     flex-flow: column;
-    margin-left: 5vw;
     gap: 20px;
 
 
