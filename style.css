@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bgdisablelight: 0;
+        --bgdisablelight: rgba(26, 26, 26, 0.65);
         --text: #ebf2e8;
         --background: #1a1a1a;
         --primary: #83ee49;
@@ -783,12 +783,13 @@ body {
     justify-items: left;
     width: 100%;
     height: 100%;
-    margin-bottom: 5vh;
     justify-self: center;
     overflow: hidden;
     align-self: center;
     place-self: center;
-    margin-left: 10%;
+    margin: auto;
+    margin-bottom: 5vh;
+
 
 
 }
@@ -799,7 +800,6 @@ body {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 25px;
-    text-shadow: 0px 2.5px 10px  var(--background);
     margin-right: 5%;
     grid-area: 1 / 2 / 3 / 3;
 
@@ -1003,6 +1003,8 @@ body {
         place-self: center;
         place-items: center;
         gap: 50px;
+        padding-bottom: 115px;
+
 
     }
 
@@ -1355,4 +1357,9 @@ body {
 
 .item , .itemregion{
     transition: 0.5s;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--text);
 }
