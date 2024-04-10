@@ -468,8 +468,9 @@ body {
     0% {
         transform: translateX(-20vw);
     }
+
     50% {
-        transform: translateX(-50vw);
+        transform: translateX(-100vh);
     }
 
     100% {
@@ -479,8 +480,8 @@ body {
 
 .placeholder {
 
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 25vh;
+
     object-fit: cover;
 
 
