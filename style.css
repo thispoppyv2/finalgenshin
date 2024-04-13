@@ -782,8 +782,6 @@ body {
     display: flex;
     justify-content: left;
     justify-items: left;
-    width: 100%;
-    height: 100%;
     justify-self: center;
     overflow: hidden;
     align-self: center;
@@ -996,7 +994,7 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (min-width: 50px) and (max-width: 800px) {
+@media screen and (min-width: 50px) and (max-width: 950px) {
     .footer {
         flex-flow: column;
         margin-bottom: 10px;
@@ -1026,6 +1024,7 @@ body {
         place-self: center;
         justify-items: center;
         margin: 0px;
+        width: 81vw;
         margin-bottom: 10px;
         padding: 1vw;
         padding-right: 25vw;
@@ -1070,19 +1069,11 @@ body {
 
     }
 
-    .searchbar {
-        width: 90%;
-    }
-
-    .search {
-        width: 100%;
-    }
 
     .skillset {
 
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
+        margin: 0;
+        min-width: 100vw;
     }
 
     .headercenter {
@@ -1172,6 +1163,11 @@ body {
         font-size: 12vw;
     }
 
+    .search{
+
+    }
+
+
 
 
 
@@ -1184,41 +1180,8 @@ body {
     }
 }
 
-.search {
-    all: unset;
 
-    display: flex;
-    flex-flow: row;
-    justify-items: center;
-    place-self: center;
-    gap: 10px;
-    height: 30px;
-    margin-left: 13%;
-    margin-right: 13%;
-}
 
-.searchbar {
-    border-radius: 10px;
-    width: 50%;
-    padding: 10px;
-    font-size: 1em;
-}
-
-.search i {
-    align-self: center;
-}
-
-.searchbtn {
-    all: unset;
-    background: var(--secondary);
-    padding: 5px;
-    width: 75px;
-    height: 25px;
-    align-self: center;
-    border-radius: 10px;
-    text-align: center;
-    justify-content: center;
-}
 
 
 .charcon {
@@ -1226,7 +1189,7 @@ body {
     -webkit-backdrop-filter: var(--blur);
     padding-bottom: 50px;
     border-radius: 10px;
-    width: 80%;
+    width: 81vw;
     background-color: var(--bgdisablelight);
 }
 
@@ -1249,12 +1212,46 @@ body {
     padding: 10px;
     padding-bottom: 15px;
     margin-bottom: 60px;
+    max-width: 80vw;
+    margin: auto;
 
+
+}
+
+.search{
+    margin-left: 5vh;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.searchbar{
+
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px;
+    width: 35vw;
+}
+
+.searchbtn{
+    all: unset;
+    background-color: var(--secondary);
+    padding: 5px;
+    height: 1.4em;
+    width: 5em;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.searchbtn:hover{
+    filter: saturate(2);
+    cursor: pointer;
 }
 
 @media screen and  (min-width: 1030px) {
     .skillset {
-        width: 80vw;
+        width: 100vw;
         margin: auto;
         margin-bottom: 50px;
 
