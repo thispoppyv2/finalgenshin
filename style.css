@@ -1160,7 +1160,7 @@ body {
 
     .header
     {
-        font-size: 12vw;
+
     }
 
     .search{
@@ -1180,6 +1180,10 @@ body {
     }
 }
 
+
+.changelogbtnsmall:hover{
+
+}
 
 
 
@@ -1360,4 +1364,17 @@ body {
 .logo{
     text-decoration: none;
     color: var(--text);
+}
+
+.changelogbtnsmall:hover, .changelogbtn:hover, .changelogbtnsmall2:hover{
+    transition: 0.5s;
+    transform: scale3d(0.95,0.95,0.95);
+
+    -webkit-box-shadow: 0px 0px 0px 1px var(--text);
+    -moz-box-shadow: 0px 0px 0px 1px var(--text);
+    box-shadow: 0px 0px 0px 1px var(--text);
+}
+
+.changelogbtnsmall, .changelogbtn, .changelogbtnsmall2{
+    transition: 0.5s;
 }
